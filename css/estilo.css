@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-board{
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.smoker {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    animation: smoker-animation 2s  infinite linear;
+}
+@keyframes smoker-animation {
+    from {
+        right: -350px;
+    }
+    to{
+        right: 100%;
+    }
+    
+}
+.luffy {
+    position: absolute;
+    bottom: 0;
+   
+}
+.jump {
+    animation: jump 900ms ease-out;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    30% {
+        bottom: 180px;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    70% {
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0;
+    }
+    
+}
