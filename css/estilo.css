@@ -3,21 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: linear-gradient(#94d6ff, #006f9b);
+}
+.nuvens{
+    width: 550px;
+    position: absolute;
+    right: 0;
+    animation: clouds 10s infinite linear;
+}
+
+@keyframes clouds {
+    from {
+        right: -500px;
+    }
+    
+    to {
+        right: 100%;
+    }
+    
+}
 .game-board{
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 15px solid rgb(0, 148, 20);
     position: relative;
     margin: 0 auto;
     overflow: hidden;
+    background: linear-gradient(#87CEEB, #E8F6FF);
 }
-.smoker {
+.trap {
     position: absolute;
     bottom: 0;
-    width: 200px;
-    animation: smoker-animation 2s  infinite linear;
+    width: 15%;   
+    animation: trap-animation 1.5s  infinite linear;
 }
-@keyframes smoker-animation {
+@keyframes trap-animation {
     from {
         right: -350px;
     }
@@ -32,7 +53,7 @@
    
 }
 .jump {
-    animation: jump 900ms ease-out;
+    animation: jump 800ms ease-out;
 }
 
 @keyframes jump {
@@ -40,19 +61,22 @@
         bottom: 0;
     }
     30% {
-        bottom: 180px;
+        bottom: 200px;
     }
     40%{
-        bottom: 180px;
+        bottom: 200px;
     }
     50% {
-        bottom: 180px;
+        bottom: 200px;
     }
     60% {
-        bottom: 180px;
+        bottom: 200px;
     }
     70% {
-        bottom: 180px;
+        bottom: 200px;
+    }
+    750% {
+        bottom: 200px;
     }
     100%{
         bottom: 0;
